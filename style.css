@@ -40,7 +40,7 @@ button {
     border: none;
 }
 
-/* Reusable */
+/* REUSABLE */
 .f-light {
     color: var(--font-light);
 }
@@ -55,11 +55,49 @@ button {
     font-size: var(--title-s);
     color: var(--color-gray);
 }
+/* BUTTONS */
 .btn {
     width: 25px;
     height: 25px;
     color: var(--color-gray);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.btn--dark {
+    background-color: gray;
+    color: var(--font-light);
+    margin: 0 20px;
+}
+.btn--outline {
+    border: 1px solid var(--color-gray);
+    color: var(--color-gray);
+}
+.btn--green {
+    background-color: var(--primary-color);
+    color: var(--font-light);
+}
+.btn--outline--green {
+    border: 1px solid var(--primary-color);
+}
+.btn--font-green {
+    color: var(--primary-color);
+}
+.btn--big {
+    width: 100px;
+    height: 35px;
+    border-radius: 25px;
+}
+.btn--outline--big {
+    border-width: 2px;
+}
+
+
+
+
+
+
 .round {
     border-radius: 50%;
 }
@@ -180,17 +218,7 @@ button {
 #album-btns {
     min-width: 205px;
 }
-#play-all-icon {
-    margin-right: 5px;
-}
-.btn-album {
-    background: none;
-    width: 100px;
-    height: 35px;
-    border-radius: 25px;
-    border-style: none;
-    border: 2px solid #53d25e;
-}
+
 
 /* PLAYLIST */
 #playlist-wrapper {
@@ -225,17 +253,6 @@ button {
     margin: 0 20px;
 }
 
-.btn__fav {
-    color: var(--color-gray);
-}
-.playlist__song .btn__fav {
-    margin-right: 35px;
-}
-
-.btn__play--border {
-    border: 1px solid var(--color-gray);
-    color: var(--color-gray);
-}
 .btn--font-sm {
     font-size: 8px;
 }
@@ -250,11 +267,6 @@ button {
 .btn__fav--liked {
     color: var(--primary-color);
     display: none;
-}
-.btn--green {
-    border: none;
-    color: var(--font-light);
-    background-color: var(--primary-color);
 }
 
 /* CARROUSEL */
@@ -279,10 +291,6 @@ button {
 }
 #carrousel-options .btn-options:first-child .option-underline{
     display: block;
-}
-
-.btn-direction:first-child {
-    margin-right: 15px;
 }
 
 #carrousel {
